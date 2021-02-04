@@ -1,0 +1,25 @@
+input {
+  display: none;
+  height: 20px;
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  overflow: hidden;
+}
+
+input[type="checkbox"] + label {
+  display: inline-block;
+  position: relative;
+  cursor: pointer;
+
+  &:before {
+    &:nth-child(1) {
+      margin-right: 0px;
+    }
+    content: " ";
+  }
+}
+
+label {
+  position: relative;
+}
